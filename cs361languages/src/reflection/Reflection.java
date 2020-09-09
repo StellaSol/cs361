@@ -49,7 +49,7 @@ public class Reflection {
 		// TODO To complete
 		// You need to use the EXACT format of the output
 		// Hint: Use the method getSuperClass()
-		
+		System.out.println(o.getClass() + " inherits from " + o.getClass().getSuperclass() );
 		
 		
 	}
@@ -92,16 +92,16 @@ public class Reflection {
 		// Demonstration of the methods on an objet of type String
 		// TODO To complete
 		String myString = "hi";
-		r.correspondingClass(myString);
+		//r.correspondingClass(myString);
 		r.inheritanceChain(myString);
-		r.listMethods(myString);
+		//r.listMethods(myString);
 		
 		// Demonstration of the methods on an objet of type ColoredCircle
 		// TODO To complete		
 		ColoredCircle c = new ColoredCircle();
-		r.correspondingClass(c);
+		//r.correspondingClass(c);
 		r.inheritanceChain(c);
-		r.listMethods(c);
+		//r.listMethods(c);
 		
 		
 	}

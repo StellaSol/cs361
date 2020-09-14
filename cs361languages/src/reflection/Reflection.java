@@ -4,7 +4,7 @@
 package reflection;
 
 /**
- * @author ADD YOUR NAME 
+ * @author Stella Solano
  *
  */
 
@@ -71,7 +71,6 @@ public class Reflection {
 		for(int i = 0; i < m.length;i++) {
 			Method method = m[i];
 			System.out.print(method.getName() + "\n");
-			System.out.println("\n");
 		}
 	}
 
@@ -91,17 +90,18 @@ public class Reflection {
 		
 		// Demonstration of the methods on an objet of type String
 		// TODO To complete
-		String myString = "hi";
-		//r.correspondingClass(myString);
+		String myString = new String();
+		r.correspondingClass(myString);
 		r.inheritanceChain(myString);
-		//r.listMethods(myString);
+		r.listMethods(myString);
 		
 		// Demonstration of the methods on an objet of type ColoredCircle
 		// TODO To complete		
+		System.out.print("\n");
 		ColoredCircle c = new ColoredCircle();
-		//r.correspondingClass(c);
+		r.correspondingClass(c);
 		r.inheritanceChain(c);
-		//r.listMethods(c);
+		r.listMethods(c);
 		
 		
 	}

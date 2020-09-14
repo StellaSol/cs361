@@ -49,8 +49,12 @@ public class Reflection {
 		// TODO To complete
 		// You need to use the EXACT format of the output
 		// Hint: Use the method getSuperClass()
-		System.out.println(o.getClass() + " inherits from " + o.getClass().getSuperclass() );
 		
+		Class c = o.getClass();
+		while(c != null) {
+		System.out.print(c.getName() + " inherits from " + o.getClass().getSuperclass() );
+		c = c.getSuperclass();
+		}
 		
 	}
 	
@@ -68,7 +72,7 @@ public class Reflection {
 		// TODO To complete
 		// Print each method on one line
 		// Use this EXACT format
-		for(int i = 0; i < m.length;i++) {
+		for(int i = 0; i < m.length; i++) {
 			Method method = m[i];
 			System.out.print(method.getName() + "\n");
 		}
